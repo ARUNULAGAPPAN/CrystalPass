@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CrystalPass — Secure Password Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="div" class="glass-card">
+    <h1>CrystalPass</h1>
+    <hr />
+    <label>
+      Enter the length of password:
+      <input type="number" id="len" min="1" />
+    </label>
+
+    <div class="checkbox-group">
+      <label><input type="checkbox" id="cap" /> Include uppercase letter</label>
+      <label><input type="checkbox" id="dig" /> Include digit</label>
+      <label><input type="checkbox" id="spe" /> Include special character</label>
+    </div>
+
+    <label>
+      Custom string to add:
+      <input type="text" id="cus" />
+    </label>
+
+    <div class="btn-group">
+      <button onclick="generate()">GENERATE</button>
+      <button onclick="copyPassword()">COPY</button>
+    </div>
+
+    <p id="pass" class="password-box"></p>
+
+    <hr />
+  </div>
+  <footer>
+    <h3>copyright by Bharathjeyakkumar</h3>
+    
+  </footer>
+</body>
+</html>
